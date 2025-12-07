@@ -1,55 +1,53 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: 0.0.0 → 1.0.0 (MAJOR: Initial version)
+Modified principles:
+  - [PROJECT_NAME] → Claude Code Project
+  - [PRINCIPLE_1_NAME] → Clarity and Simplicity
+  - [PRINCIPLE_2_NAME] → Test-Driven Development (TDD)
+  - [PRINCIPLE_3_NAME] → Incremental Development
+  - [PRINCIPLE_4_NAME] → Code Quality
+  - [PRINCIPLE_5_NAME] → Security by Design
+Added sections:
+  - Additional Constraints
+  - Development Workflow
+Removed sections: none
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ✅ updated
+  - .specify/templates/spec-template.md: ✅ updated
+  - .specify/templates/tasks-template.md: ✅ updated
+  - .specify/templates/commands/sp.constitution.md: ✅ updated
+  - .specify/templates/commands/sp.phr.md: ✅ updated
+Follow-up TODOs: none
+-->
+# Claude Code Project Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Clarity and Simplicity
+Code must be easy to understand, maintain, and debug. Prefer simple solutions over complex ones. Avoid unnecessary abstractions or over-engineering.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Test-Driven Development (TDD)
+All new features and bug fixes MUST be accompanied by automated tests. Tests should be written before the implementation code, following a red-green-refactor cycle.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Incremental Development
+Deliver features in small, self-contained increments. Each increment should be functional, tested, and ready for deployment.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Code Quality
+Adhere to established coding standards, style guides, and best practices. Code reviews are mandatory for all changes.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Security by Design
+Security considerations MUST be integrated into every stage of the development lifecycle. All code must be reviewed for potential vulnerabilities, and security best practices followed.
 
-### [PRINCIPLE_6_NAME]
+## Additional Constraints
 
+All new services or significant features must be developed with a focus on cloud-native principles and scalability. Technology stack choices require architectural review.
 
-[PRINCIPLE__DESCRIPTION]
+## Development Workflow
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All code changes MUST go through a pull request review process. Continuous Integration (CI) checks must pass before merging to main branches.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This Constitution is the ultimate source of truth for project principles. Amendments require a formal proposal, team review, and approval by designated architects. All PRs and code reviews must verify compliance with these principles.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06

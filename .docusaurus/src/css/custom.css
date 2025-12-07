@@ -1,0 +1,237 @@
+/**
+ * Custom CSS for the futuristic "Cyber-Physical Look" design.
+ * Implements the electric blue/cyan primary color with dark background.
+ */
+
+/* Import Inter font for clean, futuristic typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #00f7ff; /* Electric Blue / Cyan */
+  --ifm-color-primary-dark: #00d9e0;
+  --ifm-color-primary-darker: #00c7cd;
+  --ifm-color-primary-darkest: #00a3a9;
+  --ifm-color-primary-light: #1df9ff;
+  --ifm-color-primary-lighter: #33faff;
+  --ifm-color-primary-lightest: #66fdff;
+  --ifm-color-secondary: #a64de6; /* Neon Purple accent */
+  --ifm-color-secondary-dark: #9544ce;
+  --ifm-color-secondary-darker: #873cb9;
+  --ifm-color-secondary-darkest: #6f3198;
+  --ifm-color-secondary-light: #b061e9;
+  --ifm-color-secondary-lighter: #ba76ed;
+  --ifm-color-secondary-lightest: #d0a2f3;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 247, 255, 0.15);
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --ifm-background-color: #0a0a0f; /* Deep Slate/Black */
+  --ifm-background-surface-color: #121218;
+  --ifm-footer-background-color: #0a0a0f;
+  --ifm-navbar-background-color: rgba(10, 10, 15, 0.8); /* Glass-morphism effect */
+  --ifm-navbar-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #00f7ff; /* Electric Blue / Cyan */
+  --ifm-color-primary-dark: #00d9e0;
+  --ifm-color-primary-darker: #00c7cd;
+  --ifm-color-primary-darkest: #00a3a9;
+  --ifm-color-primary-light: #1df9ff;
+  --ifm-color-primary-lighter: #33faff;
+  --ifm-color-primary-lightest: #66fdff;
+  --ifm-color-secondary: #a64de6; /* Neon Purple accent */
+  --ifm-color-secondary-dark: #9544ce;
+  --ifm-color-secondary-darker: #873cb9;
+  --ifm-color-secondary-darkest: #6f3198;
+  --ifm-color-secondary-light: #b061e9;
+  --ifm-color-secondary-lighter: #ba76ed;
+  --ifm-color-secondary-lightest: #d0a2f3;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 247, 255, 0.15);
+  --ifm-background-color: #0a0a0f; /* Deep Slate/Black */
+  --ifm-background-surface-color: #121218;
+  --ifm-footer-background-color: #0a0a0f;
+  --ifm-navbar-background-color: rgba(10, 10, 15, 0.8); /* Glass-morphism effect */
+  --ifm-navbar-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Glass-morphism navbar effect */
+.navbar {
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(0, 247, 255, 0.1);
+}
+
+/* Futuristic button styles */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 247, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-light);
+  border-color: var(--ifm-color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 247, 255, 0.5);
+}
+
+/* Custom admonition styles - "System Alerts" */
+.alert {
+  border-radius: 8px;
+  border-left-width: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.alert::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+}
+
+.alert--info {
+  border-left-color: var(--ifm-color-primary);
+  background-color: rgba(0, 247, 255, 0.05);
+}
+
+.alert--info::before {
+  background-color: var(--ifm-color-primary);
+}
+
+.alert--warning {
+  border-left-color: #ffcc00;
+  background-color: rgba(255, 204, 0, 0.05);
+}
+
+.alert--warning::before {
+  background-color: #ffcc00;
+}
+
+.alert--success {
+  border-left-color: #00ff9d;
+  background-color: rgba(0, 255, 157, 0.05);
+}
+
+.alert--success::before {
+  background-color: #00ff9d;
+}
+
+.alert--danger {
+  border-left-color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.05);
+}
+
+.alert--danger::before {
+  background-color: #ff4d4d;
+}
+
+/* Card styles for feature cards */
+.card {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 247, 255, 0.2);
+  background-color: var(--ifm-background-surface-color);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 247, 255, 0.2);
+  border-color: rgba(0, 247, 255, 0.4);
+}
+
+.card__header h3 {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Custom link styles */
+a {
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code block styling */
+.code-block {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Custom typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Footer styling */
+.footer {
+  border-top: 1px solid rgba(0, 247, 255, 0.1);
+  background-color: var(--ifm-footer-background-color);
+}
+
+/* Sidebar styling */
+.menu {
+  background-color: var(--ifm-background-surface-color);
+  border-right: 1px solid rgba(0, 247, 255, 0.1);
+}
+
+/* Search bar styling */
+.navbar__search-input {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  border: 1px solid rgba(0, 247, 255, 0.1);
+  padding: 8px 12px;
+}
+
+/* Custom glow effect for important elements */
+.glow-element {
+  position: relative;
+}
+
+.glow-element::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: inherit;
+  z-index: -1;
+  background: linear-gradient(45deg, var(--ifm-color-primary), var(--ifm-color-secondary), var(--ifm-color-primary));
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+  opacity: 0.3;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Footer link styling */
+.footer__link-item:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
