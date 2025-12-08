@@ -15,15 +15,16 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://Anzal-Developer.github.io',  // Tumhara GitHub username: Anzal-Developer
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/Physical-AI-and-Humanoid-Robotics/',  // Tumhara repo name with slash end mein
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Anzal-Developer',  // Tumhara GitHub username
+  projectName: 'Physical-AI-and-Humanoid-Robotics',  // Tumhara repo name
+  deploymentBranch: 'gh-pages',  // GitHub Pages ke liye
 
   onBrokenLinks: 'throw',
 
@@ -44,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Anzal-Developer/Physical-AI-and-Humanoid-Robotics/tree/main/f-docusaurus/',  // Tumhara repo URL (f-docusaurus path add kiya kyunki project wahan hai)
         },
         blog: {
           showReadingTime: true,
@@ -55,7 +56,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Anzal-Developer/Physical-AI-and-Humanoid-Robotics/tree/main/f-docusaurus/',  // Yahan bhi tumhara repo URL
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -103,7 +104,7 @@ const config: Config = {
           ],
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Anzal-Developer/Physical-AI-and-Humanoid-Robotics',  // Tumhara GitHub repo URL
           label: 'GitHub',
           position: 'right',
         },
@@ -147,7 +148,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Anzal-Developer/Physical-AI-and-Humanoid-Robotics',  // Tumhara repo URL
             },
             {
               label: 'Panaversity',
