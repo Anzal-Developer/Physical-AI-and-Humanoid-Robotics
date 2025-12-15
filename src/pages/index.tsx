@@ -13,7 +13,7 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.heroContent}>
           <Heading as="h1" className={clsx('hero__title', styles.mainTitle)}>
-            Physical AI & Humanoid Robotics 
+            Physical AI & Humanoid Robotics Textbook
           </Heading>
           <p className={clsx('hero__subtitle', styles.subTitle)}>
             The World's First Spec-Driven Course on Physical AI & Humanoid Robotics.
